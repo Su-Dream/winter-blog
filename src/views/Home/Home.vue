@@ -20,12 +20,13 @@
         <div class="mb-4 h-96 bg-slate-400">这是侧边栏板块3</div>
       </aside>
       <div class="w-9/12">
-        <div class="w-9/12 mb-4 h-80 bg-slate-500">这是内容板块1</div>
-        <div class="w-9/12 mb-4 h-80 bg-slate-500">这是内容板块2</div>
-        <div class="w-9/12 mb-4 h-80 bg-slate-500">这是内容板块3</div>
+        <div class="mb-4 h-80 bg-slate-500">这是内容板块1</div>
+        <div class="mb-4 h-80 bg-slate-500">这是内容板块2</div>
+        <div class="mb-4 h-80 bg-slate-500">这是内容板块3</div>
       </div>
     </section>
   </main>
+  <FooterVue></FooterVue>
 </template>
 
 <style lang="less" scoped>
