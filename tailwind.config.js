@@ -6,6 +6,10 @@ export default {
       colors: {
         "regal-white": "#EEEEEE",
       },
+      boxShadow: {
+        md: "0 3px 8px 6px rgba(7,17,27,0.15);",
+        sm: "0 3px 8px 6px rgba(7,17,27,0.06)",
+      },
     },
   },
   plugins: [],

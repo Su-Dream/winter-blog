@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+  .bg-avatar{
+    background: url("../../../public/images/avatar.gif");
+  }
+  .bg-auto{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

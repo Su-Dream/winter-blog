@@ -2,9 +2,9 @@
   font-family: "iconfont"; /* Project id 4300922 */
   /* Color fonts */
   src: 
-       url('iconfont.woff2?t=1704896642685') format('woff2'),
-       url('iconfont.woff?t=1704896642685') format('woff'),
-       url('iconfont.ttf?t=1704896642685') format('truetype');
+       url('iconfont.woff2?t=1705153356119') format('woff2'),
+       url('iconfont.woff?t=1705153356119') format('woff'),
+       url('iconfont.ttf?t=1705153356119') format('truetype');
 }
 
 .iconfont {
@@ -65,5 +65,9 @@
 
 .icon-bilibili:before {
   content: "\e609";
+}
+
+.icon-github-fill-white:before {
+  content: "\eac6";
 }
 

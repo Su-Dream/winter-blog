@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex justify-between h-16 p-8 items-center fixed w-full z-10 text-[#EEEEEE]"
+    class="flex justify-between h-16 p-8 items-center fixed w-full z-10 text-regal-white"
   >
     <div class="logo">
       <a href="#1" class="font-bold">Star or Dream</a>
