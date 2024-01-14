@@ -15,7 +15,9 @@
     </section>
     <section class="content max-w-screen-xl my-8 mx-auto flex justify-between">
       <aside class="w-3/12 mr-4">
-        <div class="userInfo mb-4 shadow-sm hover:shadow-md px-6 py-5">
+        <div
+          class="card-user-info mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+        >
           <!-- 头像 -->
           <div
             class="avatar w-28 h-28 rounded-full overflow-hidden bg-avatar bg-auto mx-auto"
@@ -51,7 +53,7 @@
           </div>
           <!-- follow me -->
           <div
-            class="followMe leading-loose mt-3 text-center bg-[#49B1F5] hover:bg-[#FF7242]"
+            class="followMe leading-loose mt-3 text-center bg-[#49B1F5] transform ease-in-out duration-500 hover:bg-[#FF7242]"
           >
             <a href="#" class="inline-block w-full h-full">
               <i class="iconfont icon-github-fill-white !text-sm"></i>
@@ -64,35 +66,63 @@
           <div
             class="card-info-icons flex justify-center gap-x-[.625rem] mt-2 leading-loose"
           >
-            <div class="card-info-icons-item">
+            <div
+              class="card-info-icons-item transform ease-in-out duration-300 hover:rotate-180"
+            >
               <a href="#" class="w-full h-full">
                 <i class="iconfont icon-github-fill !text-[1.375rem]"></i>
               </a>
             </div>
-            <div class="card-info-icons-item">
+            <div
+              class="card-info-icons-item transform ease-in-out duration-300 hover:rotate-180"
+            >
               <a href="#" class="w-full h-full">
                 <i class="iconfont icon-weixin !text-[1.375rem]"></i>
               </a>
             </div>
-            <div class="card-info-icons-item">
+            <div
+              class="card-info-icons-item transform ease-in-out duration-300 hover:rotate-180"
+            >
               <a href="#" class="w-full h-full">
                 <i class="iconfont icon-QQ !text-[1.375rem]"></i>
               </a>
             </div>
-            <div class="card-info-icons-item">
+            <div
+              class="card-info-icons-item transform ease-in-out duration-300 hover:rotate-180"
+            >
               <a href="#" class="w-full h-full">
                 <i class="iconfont icon-bilibili !text-[1.375rem]"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="mb-4 pb-4 h-48 bg-slate-400">这是侧边栏板块2</div>
-        <div class="mb-4 h-96 bg-slate-400">这是侧边栏板块3</div>
+        <div
+          class="card-acc pb-4 h-48 bg-slate-400 mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+        >
+          这是侧边栏板块2
+        </div>
+        <div
+          class="h-96 bg-slate-400 mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+        >
+          这是侧边栏板块3
+        </div>
       </aside>
       <div class="w-9/12">
-        <div class="mb-4 h-80 bg-slate-500">这是内容板块1</div>
-        <div class="mb-4 h-80 bg-slate-500">这是内容板块2</div>
-        <div class="mb-4 h-80 bg-slate-500">这是内容板块3</div>
+        <div
+          class="h-80 bg-slate-500 mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+        >
+          这是内容板块1
+        </div>
+        <div
+          class="h-80 bg-slate-500 mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+        >
+          这是内容板块2
+        </div>
+        <div
+          class="h-80 bg-slate-500 mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+        >
+          这是内容板块3
+        </div>
       </div>
     </section>
   </main>
