@@ -5,6 +5,8 @@ export default {
     extend: {
       colors: {
         "regal-white": "#EEEEEE",
+        "regal-textColor": "#4c4948",
+        "regal-hover": "#49B1F5",
       },
       boxShadow: {
         md: "0 3px 8px 6px rgba(7,17,27,0.15);",
