@@ -7,11 +7,13 @@
 
 // vite.config.ts
 import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
+
+import ElementPlus from 'unplugin-element-plus/vite'
 
 
 export default defineConfig({
@@ -25,9 +27,9 @@ export default defineConfig({
       imports: ['vue'],
       // 第三方组件库的解析器
       resolvers: [ElementPlusResolver({
-        // 关键：自动引入修改主题色添加这一行，使用预处理样式，不添加将会导致使用ElMessage，ElNotification等组件时默认的主题色会覆盖自定义的主题色
-        importStyle: 'sass'
-      })],
+				// 自动引入修改主题色添加这一行，使用预处理样式，不添加将会导致使用ElMessage，ElNotification等组件时默认的主题色会覆盖自定义的主题色
+				importStyle: "sass",
+			})],
     }),
     Components({
       // dirs 指定组件所在位置，默认为 src/components
@@ -41,20 +43,23 @@ export default defineConfig({
         importStyle: 'sass'
       })],
     }),
+    // 按需定制主题配置
+    ElementPlus({
+      useSource: true,
+    }),
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-
-        ` //关键
-      }
-    }
-  },
   resolve: {
     alias: {
         "@": resolve(__dirname, 'src'), // 路径别名
     },
     extensions: ['.vue', '.json', '.ts'] // 使用路径别名时想要省略的后缀名，可以自己 增减
-}
+  },
+	css: {
+		preprocessorOptions: {
+			scss: {
+				// 自定义的主题色
+				additionalData: `@use "@/css/element.scss" as *;`,
+			},
+		},
+	},
 })

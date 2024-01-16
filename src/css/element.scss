@@ -1,13 +1,26 @@
 // styles/element/index.scss
 /* 只需要重写你需要的即可 */
-@forward 'element-plus/theme-chalk/src/common/var.scss' with(
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
   $colors: (
     'primary': (
+      // 主色
       'base': #00C4B6,
     ),
-  ),
-);
-
-// 如果只是按需导入，则可以忽略以下内容。
-// 如果你想导入所有样式:
-// @use "element-plus/theme-chalk/src/index.scss" as *;
+    'success': (
+      // 成功色
+      'base': #49B1F5,
+    ),
+    'warning': (
+      // 警告色
+      'base': #FF7242,
+    ),
+    'danger': (
+      // 危险色
+      'base': #e26237,
+    ),
+    'error': (
+      // 错误色
+      'base': #cf4444,
+    ),
+  )
+)
