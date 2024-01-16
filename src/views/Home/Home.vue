@@ -117,7 +117,7 @@
           class="card-new-content mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
         >
           <div class="title mb-2">
-            <i class="iconfont icon-gonggao !text-xl align-middle"></i>
+            <i class="iconfont icon-history !text-xl align-middle"></i>
             <span class="ml-[.625rem] align-middle font-bold">最新文章</span>
           </div>
           <div class="aside-list">
@@ -147,10 +147,11 @@
           </div>
         </div>
       </aside>
-      <div class="card-content-list w-9/12">
+      <!-- 中间正文 -->
+      <div class="card-content-list w-9/12 text-regal-textColor">
         <div class="loop-item" v-for="o in 3" :key="o">
           <div
-            class="card-content-item flex justify-between h-80 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md"
+            class="card-content-item flex justify-between h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md"
           >
             <div class="pictrue w-5/12 overflow-hidden">
               <a
@@ -164,15 +165,17 @@
                 />
               </a>
             </div>
-            <div class="content w-7/12 px-10 self-center">
-              <div class="title">Endnotes20 破解版安装及使用简单教程</div>
-              <div class="subtitle">
-                <i class="iconfont icon-biaoqian"></i>
+            <div class="content w-7/12 px-10 self-center leading-loose">
+              <div class="title text-2xl">
+                Endnotes20 破解版安装及使用简单教程
+              </div>
+              <div class="subtitle text-[0.75rem] my-2">
+                <i class="iconfont !text-sm icon-calendar-v2"></i>
                 发表于{{ "2022-04-26" }} |
-                <i class="iconfont icon-biaoqian"></i>
+                <i class="iconfont !text-sm icon-inbox align-text-top"></i>
                 {{ "学习" }} > {{ "Endonotes" }}
               </div>
-              <div class="info line-clamp-3">
+              <div class="info line-clamp-3 text-sm leading-loose">
                 链接：https://pan.baidu.com/s/1z2JRLarbxrHGQHaWNViAtg
                 提取码：luud 软件介绍endnotes20主要功能
                 参考文献管理：概览，标题、作者、摘要、期刊等重要信息一目了然
@@ -191,17 +194,19 @@
             </div>
           </div>
           <div
-            class="card-content-item flex justify-between h-80 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md"
+            class="card-content-item flex justify-between h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md"
           >
             <div class="content w-7/12 px-10 self-center">
-              <div class="title">Endnotes20 破解版安装及使用简单教程</div>
-              <div class="subtitle">
-                <i class="iconfont icon-biaoqian"></i>
+              <div class="title text-2xl">
+                Endnotes20 破解版安装及使用简单教程
+              </div>
+              <div class="subtitle text-[0.75rem] my-2">
+                <i class="iconfont !text-sm icon-calendar-v2"></i>
                 发表于{{ "2022-04-26" }} |
-                <i class="iconfont icon-biaoqian"></i>
+                <i class="iconfont !text-sm icon-inbox align-text-top"></i>
                 {{ "学习" }} > {{ "Endonotes" }}
               </div>
-              <div class="info line-clamp-3">
+              <div class="info line-clamp-3 text-sm leading-loose">
                 链接：https://pan.baidu.com/s/1z2JRLarbxrHGQHaWNViAtg
                 提取码：luud 软件介绍endnotes20主要功能
                 参考文献管理：概览，标题、作者、摘要、期刊等重要信息一目了然
@@ -231,6 +236,9 @@
               </a>
             </div>
           </div>
+        </div>
+        <div class="page w-full flex justify-center">
+          <el-pagination background layout="prev, pager, next" :total="30" />
         </div>
       </div>
     </section>

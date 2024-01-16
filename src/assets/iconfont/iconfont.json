@@ -6,6 +6,27 @@
   "description": "个人博客",
   "glyphs": [
     {
+      "icon_id": "11399004",
+      "name": "history",
+      "font_class": "history",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "929485",
+      "name": "inbox",
+      "font_class": "inbox",
+      "unicode": "e744",
+      "unicode_decimal": 59204
+    },
+    {
+      "icon_id": "18170354",
+      "name": "日历,日期",
+      "font_class": "calendar-v2",
+      "unicode": "e9aa",
+      "unicode_decimal": 59818
+    },
+    {
       "icon_id": "4735727",
       "name": "公告",
       "font_class": "gonggao",

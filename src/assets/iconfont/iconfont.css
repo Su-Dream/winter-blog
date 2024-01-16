@@ -2,9 +2,9 @@
   font-family: "iconfont"; /* Project id 4300922 */
   /* Color fonts */
   src: 
-       url('iconfont.woff2?t=1705327539829') format('woff2'),
-       url('iconfont.woff?t=1705327539829') format('woff'),
-       url('iconfont.ttf?t=1705327539829') format('truetype');
+       url('iconfont.woff2?t=1705414095615') format('woff2'),
+       url('iconfont.woff?t=1705414095615') format('woff'),
+       url('iconfont.ttf?t=1705414095615') format('truetype');
 }
 
 .iconfont {
@@ -13,6 +13,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-history:before {
+  content: "\e602";
+}
+
+.icon-inbox:before {
+  content: "\e744";
+}
+
+.icon-calendar-v2:before {
+  content: "\e9aa";
 }
 
 .icon-gonggao:before {
