@@ -1,27 +1,62 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted, ref } from "vue";
+
+import { Typed } from "typed.ts";
+// 创建 Typed 实例
+const typedContainer = ref<HTMLDivElement | null>(null);
+const typed = new Typed({ callback: (text: string) => updateTypedText(text) });
+
+// 定义要打字的文本
+const line1 = "抬头望着天，那里有每一个人的幻想";
+
+// 在组件挂载时开始打字动画
+onMounted(() => {
+  if (typedContainer.value) {
+    typed.type(line1).wait(1000).run();
+  }
+});
+
+// 更新挂载在 div 上的文本
+const updateTypedText = (text: string) => {
+  if (typedContainer.value) {
+    typedContainer.value.innerHTML = text;
+  }
+};
+</script>
 <template>
   <HeaderVue></HeaderVue>
-  <main>
-    <section>
+  <main class="select-none">
+    <section class="window-bg relative">
       <div class="bgMovie">
         <video
           width="100%"
+          height="100vh"
           src="../../../public/videos/MonaWallpaperFHD.mp4"
           muted
           autoplay
           loop
         ></video>
       </div>
+      <div
+        class="size-info absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-center text-white"
+      >
+        <div class="site-title font-bold text-[2.5rem]">
+          {{ "星星与梦" }}
+        </div>
+        <div ref="typedContainer" id="typed" class="site-subtitle text-2xl">
+          <!-- {{ "抬头望着天，那里有每一个人的幻想" }} -->
+        </div>
+      </div>
     </section>
     <section class="content max-w-screen-xl my-8 mx-auto flex justify-between">
       <aside class="w-3/12 mr-4 text-regal-textColor">
         <!-- 用户信息板块 -->
         <div
-          class="card-user-info mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+          class="card-user-info mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg"
         >
           <!-- 头像 -->
           <div
-            class="avatar w-28 h-28 rounded-full overflow-hidden bg-avatar bg-auto mx-auto"
+            class="avatar w-28 h-28 rounded-full overflow-hidden bg-avatar bg-auto mx-auto transform duration-500 hover:rotate-[360deg]"
           ></div>
           <!-- 用户名 -->
           <div class="authorInfoName leading-loose text-center text-[1.375rem]">
@@ -99,7 +134,7 @@
         </div>
         <!-- 公告板块 -->
         <div
-          class="card-acc pb-4 mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+          class="card-acc pb-4 mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg"
         >
           <div class="title mb-2">
             <i class="iconfont icon-gonggao !text-xl align-middle"></i>
@@ -114,7 +149,7 @@
         </div>
         <!-- 最新文章 -->
         <div
-          class="card-new-content mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5"
+          class="card-new-content mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg"
         >
           <div class="title mb-2">
             <i class="iconfont icon-history !text-xl align-middle"></i>
@@ -151,7 +186,7 @@
       <div class="card-content-list w-9/12 text-regal-textColor">
         <div class="loop-item" v-for="o in 3" :key="o">
           <div
-            class="card-content-item flex justify-between h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md"
+            class="card-content-item flex justify-between h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md rounded-lg"
           >
             <div class="pictrue w-5/12 overflow-hidden">
               <a
@@ -194,7 +229,7 @@
             </div>
           </div>
           <div
-            class="card-content-item flex justify-between h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md"
+            class="card-content-item flex justify-between h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md rounded-lg"
           >
             <div class="content w-7/12 px-10 self-center">
               <div class="title text-2xl">

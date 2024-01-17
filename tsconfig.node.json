@@ -6,7 +6,8 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["typed.ts"]
   },
   "include": ["vite.config.ts"]
 }
