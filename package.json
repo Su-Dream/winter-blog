@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "element-plus": "^2.4.4",
-    "typed.ts": "^3.0.0",
+    "typed.js": "^2.1.0",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"
   },

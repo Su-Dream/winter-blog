@@ -7,6 +7,8 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Announcement: typeof import('./src/components/Home/Announcement.vue')['default']
+    Content: typeof import('./src/components/Home/Content.vue')['default']
     ElIcon: typeof import('element-plus/es')['ElIcon']
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
@@ -17,7 +19,9 @@ declare module 'vue' {
     Header: typeof import('./src/components/Header/Header.vue')['default']
     HeaderVue: typeof import('./src/components/Header/HeaderVue.vue')['default']
     IconSvg: typeof import('./src/components/Global/IconSvg.vue')['default']
+    Recent: typeof import('./src/components/Home/Recent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    UserInfo: typeof import('./src/components/Home/UserInfo.vue')['default']
   }
 }
