@@ -3,37 +3,39 @@
     class="flex justify-between h-16 p-8 items-center fixed w-full z-10 text-regal-white"
   >
     <div class="logo">
-      <a href="#1" class="font-bold">Star or Dream</a>
+      <RouterLink to="/" class="font-bold cursor-pointer"
+        >Star or Dream</RouterLink
+      >
     </div>
     <nav v-if="isVisable">
       <ul class="flex text-sm">
         <li class="w-16 items-center text-center hover:">
           <i class="iconfont icon-shouye"></i>
-          <a href="#">首页 </a>
+          <RouterLink to="/">首页</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-shijianzhou"></i>
-          <a href="#">时间轴</a>
+          <RouterLink to="/Archives">时间轴</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-biaoqian"></i>
-          <a href="#">标签</a>
+          <RouterLink to="/Tags">标签</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-wenjian"></i>
-          <a href="#">分类</a>
+          <RouterLink to="/">分类</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-fenlei"></i>
-          <a href="#">清单</a>
+          <RouterLink to="/">清单</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-lianjie"></i>
-          <a href="#">友链</a>
+          <RouterLink to="/">友链</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-aixin"></i>
-          <a href="#">关于</a>
+          <RouterLink to="/About">关于</RouterLink>
         </li>
       </ul>
     </nav>
@@ -41,31 +43,31 @@
       <ul class="flex flex-col">
         <li class="w-16 items-center text-center hover:">
           <i class="iconfont icon-shouye"></i>
-          <a href="#">首页 </a>
+          <RouterLink to="/">首页 </RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-shijianzhou"></i>
-          <a href="#">时间轴</a>
+          <RouterLink to="/Archives">时间轴</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-biaoqian"></i>
-          <a href="#">标签</a>
+          <RouterLink to="/Tags">标签</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-wenjian"></i>
-          <a href="#">分类</a>
+          <RouterLink to="/">分类</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-fenlei"></i>
-          <a href="#">清单</a>
+          <RouterLink to="/">清单</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-lianjie"></i>
-          <a href="#">友链</a>
+          <RouterLink to="/">友链</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-aixin"></i>
-          <a href="#">关于</a>
+          <RouterLink to="/About">关于</RouterLink>
         </li>
       </ul>
     </div>
@@ -73,6 +75,7 @@
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
+import { RouterLink } from "vue-router";
 let isVisable = ref(true);
 </script>
 

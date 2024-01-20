@@ -16,7 +16,6 @@ onMounted(() => {
 });
 </script>
 <template>
-  <HeaderVue></HeaderVue>
   <main class="select-none">
     <section class="window-bg relative">
       <div class="bgMovie">
@@ -59,7 +58,6 @@ onMounted(() => {
       </div>
     </section>
   </main>
-  <FooterVue></FooterVue>
 </template>
 
 <style lang="less" scoped>

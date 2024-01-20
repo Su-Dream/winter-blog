@@ -16,7 +16,8 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
+    // 未读取变量提示
+    "noUnusedLocals":true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
