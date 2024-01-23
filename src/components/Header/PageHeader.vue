@@ -26,12 +26,6 @@ onMounted(() => {
       ></div>
     </div>
   </div>
-  <section class="content max-w-screen-xl my-8 mx-auto flex justify-between">
-    <!-- 侧边栏 -->
-    <CardAside></CardAside>
-    <!-- 中间正文 -->
-    <div class="card-content-list w-9/12 text-regal-textColor"></div>
-  </section>
 </template>
 
 <style lang="less" scoped>
