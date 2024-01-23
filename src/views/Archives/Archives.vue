@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <PageHeader></PageHeader>
+</template>
 
 <script setup lang="ts"></script>
 

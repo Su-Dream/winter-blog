@@ -10,7 +10,13 @@
 
 @layer utilities{
   .bg-avatar{
-    background: url("../../../public/images/avatar.gif");
+    background: url("../../public/images/avatar.gif");
+  }
+  .bg-header{
+    background: url("../../public/images/bg.png");
+  }
+  .bg-position-y-80{
+    background-position-y: 80%;
   }
   .bg-auto{
     background-repeat: no-repeat;

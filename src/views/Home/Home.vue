@@ -40,14 +40,8 @@ onMounted(() => {
       </div>
     </section>
     <section class="content max-w-screen-xl my-8 mx-auto flex justify-between">
-      <aside class="w-3/12 mr-4 text-regal-textColor">
-        <!-- 用户信息板块 -->
-        <UserInfo></UserInfo>
-        <!-- 公告板块 -->
-        <Announcement></Announcement>
-        <!-- 最新文章 -->
-        <Recent></Recent>
-      </aside>
+      <!-- 侧边栏 -->
+      <CardAside></CardAside>
       <!-- 中间正文 -->
       <div class="card-content-list w-9/12 text-regal-textColor">
         <Content></Content>

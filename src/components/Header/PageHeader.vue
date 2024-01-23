@@ -5,7 +5,7 @@ import Typed from "typed.js";
 onMounted(() => {
   // 打字机
   const typed = new Typed("#PrintText", {
-    strings: ["全部标签"],
+    strings: ["归档"],
     typeSpeed: 200,
     backSpeed: 150,
     loop: false,
