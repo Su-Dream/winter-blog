@@ -17,6 +17,7 @@ onMounted(() => {
 </script>
 <template>
   <main class="select-none">
+    <!-- 开屏动画 -->
     <section class="window-bg relative">
       <div class="bgMovie">
         <video
@@ -31,19 +32,26 @@ onMounted(() => {
       <div
         class="size-info absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-center text-white"
       >
-        <div class="site-title font-bold text-[2.5rem]">
+        <div
+          class="site-title font-bold text-xs md:text-xl lg:text-[2.5rem] mb-3"
+        >
           {{ "星星与梦" }}
         </div>
-        <div id="PrintText" class="site-subtitle text-2xl inline-block">
+        <div
+          id="PrintText"
+          class="site-subtitle text-xs md:text-xl inline-block"
+        >
           <!-- {{ "抬头望着天，那里有每一个人的幻想" }} -->
         </div>
       </div>
     </section>
-    <section class="content max-w-screen-xl my-8 mx-auto flex justify-between">
+    <section
+      class="content my-8 mx-auto flex justify-between flex-col-reverse items-center xl:items-start xl:flex-row xl:max-w-screen-xl"
+    >
       <!-- 侧边栏 -->
       <CardAside></CardAside>
       <!-- 中间正文 -->
-      <div class="card-content-list w-9/12 text-regal-textColor">
+      <div class="card-content-list w-11/12 xl:w-9/12 text-regal-textColor">
         <Content></Content>
         <!-- 翻页功能 -->
         <div class="page w-full flex justify-center">

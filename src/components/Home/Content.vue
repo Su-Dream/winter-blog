@@ -1,10 +1,10 @@
 <template>
   <div class="loop-item" v-for="(o, index) in 5" :key="index">
     <div
-      class="card-content-item flex justify-between item h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md rounded-lg"
+      class="card-content-item flex-col items-center lg:flex-row flex justify-between item xl:h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md rounded-lg"
       :class="{ 'flex-row-reverse': index % 2 != 0 }"
     >
-      <div class="pictrue w-5/12 overflow-hidden">
+      <div class="pictrue w-full lg:w-5/12 h-60 overflow-hidden">
         <a
           href="#"
           class="inline-block transform duration-500 ease-in size-full hover:scale-125"
@@ -16,15 +16,19 @@
           />
         </a>
       </div>
-      <div class="content w-7/12 px-10 self-center leading-loose">
-        <div class="title text-2xl">Endnotes20 破解版安装及使用简单教程</div>
-        <div class="subtitle text-[0.75rem] my-2">
+      <div
+        class="content w-full lg:w-7/12 py-4 px-4 lg:px-6 xl:px-10 self-center leading-none xl:leading-loose"
+      >
+        <div class="title text-xl lg:text-md xl:text-2xl">
+          Endnotes20 破解版安装及使用简单教程
+        </div>
+        <div class="subtitle text-zinc-500 text-[0.75rem] my-2">
           <i class="iconfont !text-sm icon-calendar-v2"></i>
           发表于{{ "2022-04-26" }} |
           <i class="iconfont !text-sm icon-inbox align-text-top"></i>
           {{ "学习" }} > {{ "Endonotes" }}
         </div>
-        <div class="info line-clamp-3 text-sm leading-loose">
+        <div class="info line-clamp-4 lg:line-clamp-3 text-sm leading-loose">
           链接：https://pan.baidu.com/s/1z2JRLarbxrHGQHaWNViAtg 提取码：luud
           软件介绍endnotes20主要功能
           参考文献管理：概览，标题、作者、摘要、期刊等重要信息一目了然

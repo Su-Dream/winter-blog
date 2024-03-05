@@ -40,7 +40,8 @@
       </ul>
     </nav>
     <div class="menu" v-else="isVisable">
-      <ul class="flex flex-col">
+      <i class="iconfont icon-daohanglan"></i>
+      <!-- <ul class="flex flex-col">
         <li class="w-16 items-center text-center hover:">
           <i class="iconfont icon-shouye"></i>
           <RouterLink to="/">首页 </RouterLink>
@@ -69,14 +70,27 @@
           <i class="iconfont icon-aixin"></i>
           <RouterLink to="/About">关于</RouterLink>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </header>
 </template>
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import { RouterLink } from "vue-router";
 let isVisable = ref(true);
+// 监听视口
+const handleResize = () => {
+  isVisable.value = window.innerWidth >= 768;
+};
+
+onMounted(() => {
+  handleResize();
+  window.addEventListener("resize", handleResize);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", handleResize);
+});
 </script>
 
 <style lang="less" scoped></style>

@@ -3,6 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        sm: "375px",
+        md: "425px",
+        lg: "768px",
+        xl: "1440px",
+        "2xl": "1920px",
+      },
       colors: {
         "regal-white": "#EEEEEE",
         "regal-textColor": "#4c4948",

@@ -1,7 +1,7 @@
 <template>
   <!-- 用户信息板块 -->
   <div
-    class="card-user-info mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg"
+    class="card-user-info mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg xl:text-2xl"
   >
     <!-- 头像 -->
     <div
