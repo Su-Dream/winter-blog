@@ -6,6 +6,41 @@
   "description": "个人博客",
   "glyphs": [
     {
+      "icon_id": "7735836",
+      "name": "archive",
+      "font_class": "shijianzhou",
+      "unicode": "e8c8",
+      "unicode_decimal": 59592
+    },
+    {
+      "icon_id": "39448179",
+      "name": "archive",
+      "font_class": "shijianzhou-copy",
+      "unicode": "eac9",
+      "unicode_decimal": 60105
+    },
+    {
+      "icon_id": "39448206",
+      "name": "Close",
+      "font_class": "Close-copy",
+      "unicode": "eaca",
+      "unicode_decimal": 60106
+    },
+    {
+      "icon_id": "1336062",
+      "name": "Close",
+      "font_class": "Close",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "39448209",
+      "name": "导航栏",
+      "font_class": "daohanglan-copy",
+      "unicode": "eacb",
+      "unicode_decimal": 60107
+    },
+    {
       "icon_id": "18941499",
       "name": "导航栏",
       "font_class": "daohanglan",
@@ -39,13 +74,6 @@
       "font_class": "gonggao",
       "unicode": "e60a",
       "unicode_decimal": 58890
-    },
-    {
-      "icon_id": "1766497",
-      "name": "符号-时间轴",
-      "font_class": "shijianzhou",
-      "unicode": "e69a",
-      "unicode_decimal": 59034
     },
     {
       "icon_id": "68235",
@@ -102,6 +130,62 @@
       "font_class": "vcr-full",
       "unicode": "e969",
       "unicode_decimal": 59753
+    },
+    {
+      "icon_id": "39448173",
+      "name": "首页",
+      "font_class": "shouye-copy",
+      "unicode": "eac7",
+      "unicode_decimal": 60103
+    },
+    {
+      "icon_id": "39448178",
+      "name": "音乐",
+      "font_class": "yinle-copy",
+      "unicode": "eac8",
+      "unicode_decimal": 60104
+    },
+    {
+      "icon_id": "39448214",
+      "name": "摄像机,录像机",
+      "font_class": "vcr-full-copy",
+      "unicode": "eacc",
+      "unicode_decimal": 60108
+    },
+    {
+      "icon_id": "39448218",
+      "name": "分类",
+      "font_class": "fenlei-copy",
+      "unicode": "eace",
+      "unicode_decimal": 60110
+    },
+    {
+      "icon_id": "39448229",
+      "name": "wenjian",
+      "font_class": "wenjian-copy",
+      "unicode": "eacf",
+      "unicode_decimal": 60111
+    },
+    {
+      "icon_id": "39448230",
+      "name": "爱心",
+      "font_class": "aixin-copy",
+      "unicode": "ead0",
+      "unicode_decimal": 60112
+    },
+    {
+      "icon_id": "39448233",
+      "name": "标签",
+      "font_class": "biaoqian-copy",
+      "unicode": "ead1",
+      "unicode_decimal": 60113
+    },
+    {
+      "icon_id": "39448235",
+      "name": "链接",
+      "font_class": "lianjie-copy",
+      "unicode": "ead2",
+      "unicode_decimal": 60114
     },
     {
       "icon_id": "4937000",

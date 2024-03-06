@@ -1,7 +1,8 @@
 <template>
   <!-- 用户信息板块 -->
   <div
-    class="card-user-info mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg xl:text-2xl"
+    class="card-user-info mb-4 shadow-none lg:shadow-sm transform ease-in-out duration-300 lg:hover:shadow-md px-6 py-5 lg:rounded-lg xl:text-2xl"
+    :class="{ 'text-black': props.night }"
   >
     <!-- 头像 -->
     <div
@@ -80,6 +81,16 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+/**
+ * @property {boolean} night - 夜间模式
+ */
+const props = defineProps({
+  night: {
+    type: Boolean,
+    default: false,
+  },
+});
+</script>
 
 <style lang="less" scoped></style>

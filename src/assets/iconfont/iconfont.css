@@ -2,9 +2,9 @@
   font-family: "iconfont"; /* Project id 4300922 */
   /* Color fonts */
   src: 
-       url('iconfont.woff2?t=1709653999719') format('woff2'),
-       url('iconfont.woff?t=1709653999719') format('woff'),
-       url('iconfont.ttf?t=1709653999719') format('truetype');
+       url('iconfont.woff2?t=1709691462547') format('woff2'),
+       url('iconfont.woff?t=1709691462547') format('woff'),
+       url('iconfont.ttf?t=1709691462547') format('truetype');
 }
 
 .iconfont {
@@ -13,6 +13,26 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shijianzhou:before {
+  content: "\e8c8";
+}
+
+.icon-shijianzhou-copy:before {
+  content: "\eac9";
+}
+
+.icon-Close-copy:before {
+  content: "\eaca";
+}
+
+.icon-Close:before {
+  content: "\e603";
+}
+
+.icon-daohanglan-copy:before {
+  content: "\eacb";
 }
 
 .icon-daohanglan:before {
@@ -33,10 +53,6 @@
 
 .icon-gonggao:before {
   content: "\e60a";
-}
-
-.icon-shijianzhou:before {
-  content: "\e69a";
 }
 
 .icon-fenlei:before {
@@ -69,6 +85,38 @@
 
 .icon-vcr-full:before {
   content: "\e969";
+}
+
+.icon-shouye-copy:before {
+  content: "\eac7";
+}
+
+.icon-yinle-copy:before {
+  content: "\eac8";
+}
+
+.icon-vcr-full-copy:before {
+  content: "\eacc";
+}
+
+.icon-fenlei-copy:before {
+  content: "\eace";
+}
+
+.icon-wenjian-copy:before {
+  content: "\eacf";
+}
+
+.icon-aixin-copy:before {
+  content: "\ead0";
+}
+
+.icon-biaoqian-copy:before {
+  content: "\ead1";
+}
+
+.icon-lianjie-copy:before {
+  content: "\ead2";
 }
 
 .icon-github-fill:before {
