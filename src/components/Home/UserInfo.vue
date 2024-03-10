@@ -41,9 +41,9 @@
     <div
       class="followMe leading-10 xl:leading-normal h-10 mt-3 text-center bg-[#49B1F5] transform ease-in-out duration-500 hover:bg-[#FF7242]"
     >
-      <a href="#" class="inline-block w-full h-full">
-        <i class="iconfont icon-github-fill-white !text-sm lg:!text-md"></i>
-        <span class="lg:!text-md !text-sm text-regal-white">Follow Me</span>
+      <a href="#" class="inline-block">
+        <i class="iconfont icon-github-fill-white text-[1rem]"></i>
+        <span class="text-regal-white text-[1rem]">Follow Me</span>
       </a>
     </div>
     <!-- outher -->
