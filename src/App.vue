@@ -1,8 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from "vue";
+const componentKey = ref(0);
+</script>
 
 <template>
   <HeaderVue></HeaderVue>
-  <RouterView></RouterView>
+  <RouterView :key="componentKey"></RouterView>
   <FooterVue></FooterVue>
 </template>
 

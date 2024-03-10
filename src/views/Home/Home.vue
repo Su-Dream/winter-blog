@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 import Typed from "typed.js";
 
+const printText = ref<HTMLElement | null>(null);
+let typed: Typed | null = null;
+
 onMounted(() => {
-  // 打字机
-  const typed = new Typed("#PrintText", {
+  // 创建Typed.js实例
+  typed = new Typed(printText.value!, {
     strings: [
       "抬头望着天，那里有每一个人的幻想。",
       "Look up at the sky, where everyone's fantasy.",
@@ -13,6 +16,13 @@ onMounted(() => {
     backSpeed: 50,
     loop: true,
   });
+});
+
+onBeforeUnmount(() => {
+  // 在组件销毁前销毁Typed.js实例
+  if (typed) {
+    typed.destroy();
+  }
 });
 </script>
 <template>
@@ -38,7 +48,7 @@ onMounted(() => {
           {{ "星星与梦" }}
         </div>
         <div
-          id="PrintText"
+          ref="printText"
           class="site-subtitle text-xs md:text-xl inline-block"
         >
           <!-- {{ "抬头望着天，那里有每一个人的幻想" }} -->

@@ -23,7 +23,7 @@
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-wenjian"></i>
-          <RouterLink to="/categories">分类</RouterLink>
+          <RouterLink to="/Categories">分类</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-fenlei"></i>
