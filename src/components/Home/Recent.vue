@@ -22,7 +22,7 @@
           >
             <a
               href="#"
-              class="inline-block size-full mb-[-0.2rem] text-sm whitespace-nowrap overflow-hidden text-ellipsis"
+              class="inline-block size-full mb-[-0.2rem] text-md xl:text-sm whitespace-nowrap overflow-hidden text-ellipsis"
               >Endnotes20 破解版安装及使用简单教程Endnotes20
               破解版安装及使用简单教程Endnotes20 破解版安装及使用简单教程</a
             >

@@ -64,31 +64,53 @@
           >
             <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-shouye-copy w mr-5"></i>
-              <RouterLink to="/">首页</RouterLink>
+              <RouterLink @click="(isMask = !isMask), (isMenu = !isMenu)" to="/"
+                >首页</RouterLink
+              >
             </li>
             <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-shijianzhou-copy w mr-5"></i>
-              <RouterLink to="/Archives">时间轴</RouterLink>
+              <RouterLink
+                @click="(isMask = !isMask), (isMenu = !isMenu)"
+                to="/Archives"
+                >时间轴</RouterLink
+              >
             </li>
             <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-biaoqian-copy w mr-5"></i>
-              <RouterLink to="/Tags">标签</RouterLink>
+              <RouterLink
+                @click="(isMask = !isMask), (isMenu = !isMenu)"
+                to="/Tags"
+                >标签</RouterLink
+              >
             </li>
             <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-wenjian-copy w mr-5"></i>
-              <RouterLink to="/categories">分类</RouterLink>
+              <RouterLink
+                @click="(isMask = !isMask), (isMenu = !isMenu)"
+                to="/categories"
+                >分类</RouterLink
+              >
             </li>
             <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-fenlei-copy w mr-5"></i>
-              <RouterLink to="/">清单</RouterLink>
+              <RouterLink @click="(isMask = !isMask), (isMenu = !isMenu)" to="/"
+                >清单</RouterLink
+              >
             </li>
             <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-lianjie-copy w mr-5"></i>
-              <RouterLink to="/">友链</RouterLink>
+              <RouterLink @click="(isMask = !isMask), (isMenu = !isMenu)" to="/"
+                >友链</RouterLink
+              >
             </li>
             <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-aixin-copy w mr-5"></i>
-              <RouterLink to="/About">关于</RouterLink>
+              <RouterLink
+                @click="(isMask = !isMask), (isMenu = !isMenu)"
+                to="/About"
+                >关于</RouterLink
+              >
             </li>
           </ul>
         </div>

@@ -1,7 +1,7 @@
 <template>
   <!-- 用户信息板块 -->
   <div
-    class="card-user-info mb-4 shadow-none lg:shadow-sm transform ease-in-out duration-300 lg:hover:shadow-md px-6 py-5 lg:rounded-lg xl:text-2xl"
+    class="card-user-info mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg xl:text-2xl"
     :class="{ 'text-black': props.night }"
   >
     <!-- 头像 -->
@@ -39,11 +39,11 @@
     </div>
     <!-- follow me -->
     <div
-      class="followMe leading-loose mt-3 text-center bg-[#49B1F5] transform ease-in-out duration-500 hover:bg-[#FF7242]"
+      class="followMe leading-10 xl:leading-normal h-10 mt-3 text-center bg-[#49B1F5] transform ease-in-out duration-500 hover:bg-[#FF7242]"
     >
       <a href="#" class="inline-block w-full h-full">
-        <i class="iconfont icon-github-fill-white !text-sm"></i>
-        <span class="text-sm text-regal-white pl-[.625rem]">Follow Me</span>
+        <i class="iconfont icon-github-fill-white !text-sm lg:!text-md"></i>
+        <span class="lg:!text-md !text-sm text-regal-white">Follow Me</span>
       </a>
     </div>
     <!-- outher -->

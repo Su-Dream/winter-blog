@@ -1,11 +1,13 @@
 <template>
   <PageHeader></PageHeader>
-  <section class="content max-w-screen-xl my-8 mx-auto flex justify-between">
+  <section
+    class="content xl:max-w-screen-xl items-center xl:items-start my-8 mx-auto flex flex-col-reverse xl:flex-row xl:justify-between"
+  >
     <!-- 侧边栏 -->
     <CardAside></CardAside>
     <!-- 中间正文 -->
     <div
-      class="px-[2.5rem] py-[3.125rem] card-content-list w-9/12 text-regal-textColor shadow-sm transform ease-out duration-500 hover:shadow-md rounded-lg"
+      class="px-[2.5rem] py-[3.125rem] w-11/12 text-regal-textColor shadow-sm transform ease-out duration-500 hover:shadow-md rounded-lg"
     >
       <div class="timeLine">
         <el-timeline>
