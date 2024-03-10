@@ -10,7 +10,7 @@ const currentPath = route.path.toLowerCase();
 const pathToStringsMap: Record<string, string[]> = {
   "/default": ["首页"],
   "/archives": ["归档"],
-  "/tags": ["标签"],
+  "/tags": ["全部标签"],
   "/categories": ["分类"],
   "/test1": ["测试1"],
   "/test2": ["测试2"],

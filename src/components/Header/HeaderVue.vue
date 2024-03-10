@@ -54,8 +54,9 @@
         v-if="isMask"
         @click="(isMenu = !isMenu), (isMask = !isMask)"
       >
+        <!-- 导航栏右侧 -->
         <div
-          class="menu-list bg-zinc-50 w-1/2 h-full flex flex-col"
+          class="menu-list bg-zinc-50 w-9/12 md:w-1/2 h-full flex flex-col"
           @click.stop
         >
           <UserInfo :night="true"></UserInfo>
