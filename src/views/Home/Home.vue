@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
       </div>
     </section>
     <section
-      class="content my-8 mx-auto flex justify-between flex-col-reverse items-center xl:items-start xl:flex-row xl:max-w-screen-xl"
+      class="content 2xl:w-7/12 xl:w-9/12 my-8 mx-auto flex justify-center flex-col-reverse items-center xl:items-start xl:flex-row xl:max-w-screen-2xl"
     >
       <!-- 侧边栏 -->
       <CardAside></CardAside>
