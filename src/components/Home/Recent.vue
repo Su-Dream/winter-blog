@@ -1,7 +1,7 @@
 <template>
   <!-- 最新文章板块 -->
   <div
-    class="card-new-content mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg"
+    class="animate__animated animate__fadeInLeftBig card-new-content mb-4 shadow-sm transform ease-in-out duration-300 hover:shadow-md px-6 py-5 rounded-lg"
   >
     <div class="title mb-2">
       <i class="iconfont icon-history !text-xl align-middle"></i>

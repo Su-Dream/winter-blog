@@ -1,5 +1,10 @@
 <template>
-  <div class="loop-item" v-for="(o, index) in 5" :key="index">
+  <div
+    class="loop-item animate__animated animate__fadeInRightBig"
+    :class="`animate__delay-${(index * 0.5).toFixed(1)}s`"
+    v-for="(o, index) in 5"
+    :key="index"
+  >
     <div
       class="card-content-item flex-col items-center lg:flex-row flex justify-between item xl:h-72 mb-4 shadow-sm transform ease-out duration-500 hover:shadow-md rounded-lg"
       :class="{ 'flex-row-reverse': index % 2 != 0 }"

@@ -26,7 +26,7 @@ onBeforeUnmount(() => {
 });
 </script>
 <template>
-  <main class="select-none">
+  <main class="select-none overflow-hidden">
     <!-- 开屏动画 -->
     <section class="window-bg relative">
       <div class="bgMovie">
@@ -43,7 +43,7 @@ onBeforeUnmount(() => {
         class="size-info absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-center text-white"
       >
         <div
-          class="site-title font-bold text-xs md:text-xl lg:text-[2.5rem] mb-3"
+          class="animate__animated animate__fadeIn site-title font-bold text-xs md:text-xl lg:text-[2.5rem] mb-3"
         >
           {{ "星星与梦" }}
         </div>
@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
       </div>
     </section>
     <section
-      class="content 2xl:w-7/12 xl:w-9/12 my-8 mx-auto flex justify-center flex-col-reverse items-center xl:items-start xl:flex-row xl:max-w-screen-2xl"
+      class="overflow-hidden content 2xl:w-7/12 xl:w-9/12 my-8 mx-auto flex justify-center flex-col-reverse items-center xl:items-start xl:flex-row xl:max-w-screen-2xl"
     >
       <!-- 侧边栏 -->
       <CardAside></CardAside>

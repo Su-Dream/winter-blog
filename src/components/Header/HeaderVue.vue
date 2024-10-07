@@ -1,13 +1,15 @@
 <template>
   <header
-    class="flex justify-between h-16 p-8 items-center fixed w-full z-10 text-regal-white bg-black/50"
+    class="animate__animated flex justify-between h-16 p-8 items-center fixed w-full z-10 text-regal-white bg-black/50"
   >
     <div class="logo">
-      <RouterLink to="/" class="font-bold cursor-pointer"
+      <RouterLink
+        to="/"
+        class="animate__animated animate__rotateIn font-bold cursor-pointer"
         >Star or Dream</RouterLink
       >
     </div>
-    <nav v-if="isVisable">
+    <nav v-if="isVisable" class="animate__animated animate__fadeInDown">
       <ul class="flex text-sm">
         <li class="w-16 items-center text-center hover:">
           <i class="iconfont icon-shouye"></i>
