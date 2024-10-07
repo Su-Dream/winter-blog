@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex justify-between h-16 p-8 items-center fixed w-full z-10 text-regal-white"
+    class="flex justify-between h-16 p-8 items-center fixed w-full z-10 text-regal-white bg-black/50"
   >
     <div class="logo">
       <RouterLink to="/" class="font-bold cursor-pointer"
@@ -21,17 +21,17 @@
           <i class="iconfont icon-biaoqian"></i>
           <RouterLink to="/Tags">标签</RouterLink>
         </li>
-        <li class="w-16 items-center text-center">
+        <!-- <li class="w-16 items-center text-center">
           <i class="iconfont icon-wenjian"></i>
           <RouterLink to="/Categories">分类</RouterLink>
-        </li>
-        <li class="w-16 items-center text-center">
+        </li> -->
+        <!-- <li class="w-16 items-center text-center">
           <i class="iconfont icon-fenlei"></i>
           <RouterLink to="/">清单</RouterLink>
-        </li>
+        </li> -->
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-lianjie"></i>
-          <RouterLink to="/">友链</RouterLink>
+          <RouterLink to="/link">友链</RouterLink>
         </li>
         <li class="w-16 items-center text-center">
           <i class="iconfont icon-aixin"></i>
@@ -85,7 +85,7 @@
                 >标签</RouterLink
               >
             </li>
-            <li class="border-b-2 items-center text-center">
+            <!-- <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-wenjian-copy w mr-5"></i>
               <RouterLink
                 @click="(isMask = !isMask), (isMenu = !isMenu)"
@@ -98,10 +98,12 @@
               <RouterLink @click="(isMask = !isMask), (isMenu = !isMenu)" to="/"
                 >清单</RouterLink
               >
-            </li>
+            </li> -->
             <li class="border-b-2 items-center text-center">
               <i class="iconfont icon-lianjie-copy w mr-5"></i>
-              <RouterLink @click="(isMask = !isMask), (isMenu = !isMenu)" to="/"
+              <RouterLink
+                @click="(isMask = !isMask), (isMenu = !isMenu)"
+                to="/Link"
                 >友链</RouterLink
               >
             </li>

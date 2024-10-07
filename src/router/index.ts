@@ -6,6 +6,8 @@ import Categories from '@/views/Categories/Categories.vue'
 import Music from '@/views/List/Music/Music.vue'
 import Movie from '@/views/List/Movie/Movie.vue'
 import About from '@/views/About/About.vue'
+import Link from '@/views/link/Link.vue'
+
 const routes = [
   {
     path: '/:catchAll(.*)',
@@ -39,6 +41,10 @@ const routes = [
       component :Movie,
     },
   ]
+  },
+  {
+    path: '/link',
+    component: Link,
   },
   {
     path: '/about',
